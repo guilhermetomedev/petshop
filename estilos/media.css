@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    div#menuhamburguer {
+        display: none;
+    }
+     
+    nav#menu {
+        display: flex !important;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    nav#menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 25px;
+        height: 0vh;
+        background-color: rgba(240, 248, 255, 0);
+       
+    }
+    nav#menu a{
+        display: inline-block;
+        color: var(--azul-escuro);
+        padding: 0;
+        font-weight: var(--peso-lighter);
+        font-size: 1rem;
+        width: 0%;
+        text-align: center;
+    }
+
+    nav#menu a:hover , a:active{
+        color: var(--azul-escuro);
+        background-color: var(--azul-escuro);
+        transition: background 0.5s ease;
+    }
+    
+    #login {
+        order: 0;
+    }
+    #login i {
+        display: inline;
+    }
+}

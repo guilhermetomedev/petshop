@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fonte-principal)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap');
+
+:root {
+    /* CORES */
+    --azul-escuro: #1A4E8D;
+    --azul-claro: #ACD5DE;
+    --cor-principal: #FFFFFF;
+
+    /* FONTES */
+    --fonte-principal: "Opens Sans", Arial, sans-serif;
+
+    /*PESOS*/
+    --peso-lighter: 100;
+    --peso-regular: 400;
+    --peso-bold: 700;
+}
+
+body, html {
+    background-color: gray;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+}
+
+header {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 2rem;
+}
+
+header > h1 > a{
+    font-weight: var(--peso-lighter);
+    color: var(--azul-escuro);
+}
+
+header > h1 a > i {
+    margin-right: 10px;
+}
+
+div#menuhamburguer {
+    font-size: 2rem;
+    padding: 5px;
+    z-index: 1001;
+}
+div#menuhamburguer > a{
+    color: black;
+    font-weight: 100;
+}
+div#menuhamburguer:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 30%;
+}
+
+/* TODA A CONFIGURAÇÃO DO NAV */
+
+    nav#menu {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 0;
+        z-index: 1000;
+    }
+
+    nav#menu ul {
+        background-color: var(--azul-claro);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    #login {
+        order: -1;   
+        margin: 0px 0 40px;
+        
+    }
+
+    #login i {
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+
+    nav#menu a {
+        display: inline-block;
+        color: var(--azul-escuro);
+        padding: 2rem;
+        font-weight: var(--peso-lighter);
+        font-size: 1.2rem;
+        width: 100vw;
+        text-align: center;
+    }
+
+    nav#menu a:hover , a:active{
+        color: var(--cor-principal);
+        background-color: var(--azul-escuro);
+        transition: background 0.5s ease;
+    }
+
+/* ENCERRA */

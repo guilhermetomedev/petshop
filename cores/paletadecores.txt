@@ -1,0 +1,30 @@
+CORES:
+--azul-escuro: #1A4E8D;
+--azul-claro: #ACD5DE;
+--cor-principal: #FFFFFF;
+
+============================|
+
+FONTES+OPENS-SANS:
+--fonte-lighter: @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap');
+--fonte-opens-sans: @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap');
+
+============================|
+
+ICONES:
+    <ul class="icones">
+        <li><i class="fa-solid fa-cat"></i></li>
+        <li><i class="fa-solid fa-dog"></i></li>
+        <li><i class="fa-solid fa-paw"></i></li> 
+        <li><i class="fa-solid fa-bars"></i></li>
+        <li><i class="fa-solid fa-circle-user"></i></li>
+        <li><i class="fa-solid fa-shield-dog"></i></li>
+        <li><i class="fa-solid fa-shield-cat"></i></li>
+    </ul>
+    <ul class="redessociais">
+        <li><i class="fa-brands fa-github"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+    </ul>
+
+============================|

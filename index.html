@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <title>Villa Pet</title>
+    <script src="https://kit.fontawesome.com/fd249ef772.js" crossorigin="anonymous"></script>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1><a href="#"><i class="fa-solid fa-cat"></i>Villa Pet</a></h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li id="login"><a href="#"><i class="fa-solid fa-circle-user"></i>Login</a></li>
+            </ul>
+        </nav>
+        <div id="menuhamburguer">
+            <a href="#"><i class="fa-solid fa-bars" id="burguer" onclick="clickNav()"></i></a>
+        </div>
+    </header>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickNav(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+            
+        }
+    </script>
+</body>
+</html>
