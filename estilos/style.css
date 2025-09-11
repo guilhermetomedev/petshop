@@ -42,7 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 7vh;
     padding: 2rem;
 }
 
@@ -79,8 +79,6 @@ div#menuhamburguer:hover {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 0;
         z-index: 1000;
     }
 
@@ -91,13 +89,11 @@ div#menuhamburguer:hover {
         justify-content: flex-start;
         align-items: center;
         height: 100vh;
-
     }
 
     #login {
         order: -1;   
         margin: 0px 0 40px;
-        
     }
 
     #login i {

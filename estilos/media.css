@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 963px){
     div#menuhamburguer {
         display: none;
     }
@@ -8,39 +8,52 @@
     nav#menu {
         display: flex !important;
         flex-direction: row-reverse;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border: 1px dashed rgb(0, 202, 84);
+        width: 100vw;
+        height: 7vh;
     }
 
     nav#menu ul {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-start;
-        gap: 25px;
-        height: 0vh;
+        margin-top: 1rem;
         background-color: rgba(240, 248, 255, 0);
-       
-    }
-    nav#menu a{
-        display: inline-block;
-        color: var(--azul-escuro);
-        padding: 0;
-        font-weight: var(--peso-lighter);
-        font-size: 1rem;
-        width: 0%;
-        text-align: center;
     }
 
-    nav#menu a:hover , a:active{
+    nav li#login a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav#menu a{
         color: var(--azul-escuro);
-        background-color: var(--azul-escuro);
-        transition: background 0.5s ease;
+        font-weight: var(--peso-lighter);
+        font-size: 1rem;
+        padding: 12px 48px;
+        width: 0%;
+        text-align: center;
     }
     
     #login {
         order: 0;
+        padding-bottom: 43px;
     }
-    #login i {
-        display: inline;
+
+    #login > a > i {
+        font-size: 1.8rem;
+    }
+
+    nav#menu a:hover , a:active{
+        color: var(--cor-principal);
+        background-color: var(--azul-escuro);
+        transition: background 0.5s ease;
+        width: 100%;
+        border-radius: 18px;
     }
 }
