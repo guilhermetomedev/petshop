@@ -150,7 +150,7 @@ main {
 
 section {
     background-color: var(--azul-claro);
-    height: 70vh;
+    height: 800px;
 }
 section.home {
     
@@ -180,19 +180,7 @@ div.containerhome > p{
     font-size: 1.5em;
 }
 
-div.imgcatdog {
-    position: absolute;
-    top: 65%;
-    left: 0%;
-    transform: translateY(-40%);
-}
-
-div.imgcatdog > img {
-    width: 100%;
-    z-index: 1001;
-}
-
-section.servicos {
+section.servico {
     background-color: white;
 }
 
