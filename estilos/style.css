@@ -38,11 +38,13 @@ body, html {
 }
 
 header {
-    background-color: var(--cor-principal);
+    position: fixed;
+    background-color: var(--azul-claro);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7vh;
+    width: 100vw;
     padding: 2rem;
 }
 
@@ -79,7 +81,7 @@ div#menuhamburguer:hover {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 1001;
     }
 
     nav#menu ul {
@@ -118,3 +120,126 @@ div#menuhamburguer:hover {
     }
 
 /* ENCERRA */
+
+/* CONFIGURAÇÃO DO BOTÃO DE CONVERSA*/
+
+div.balaodeconversa {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    border-radius: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    margin: 0px 0px 4rem 2rem;
+}
+
+div.balaodeconversa > a > i{
+    font-size: 2rem;
+    color: var(--azul-escuro);
+}
+
+/* ENCERRA */
+
+main {
+    background-color: black;
+    
+}
+
+section {
+    background-color: var(--azul-claro);
+    height: 70vh;
+}
+section.home {
+    
+}
+
+div.containerhome {
+    width: 400px;
+    margin-left: 32px;
+}
+
+div.containerhome > p, h2{
+    color: var(--azul-escuro);
+    text-align: left;
+}
+
+div.containerhome > h2{
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+div.containerhome > p{
+    color: var(--azul-escuro);
+    font-weight: lighter;
+    padding-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.5em;
+}
+
+div.imgcatdog {
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    transform: translateY(-40%);
+}
+
+div.imgcatdog > img {
+    width: 100%;
+    z-index: 1001;
+}
+
+section.servicos {
+    background-color: white;
+}
+
+footer {
+    height: 30vh;
+    padding: 2rem 0.50rem;
+    display: flex;
+    background-color: var(--cor-principal);
+    border: 3px dashed blueviolet;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+footer li, h3, h1 > a, hr, p{
+    color: var(--azul-escuro);
+}
+
+footer li {
+    line-height: 1.5rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+footer > div.logo, div.endereco, div.contato, div.sociais{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.balaodeconversa {
+        display: none;
+    }
