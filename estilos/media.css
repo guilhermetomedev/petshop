@@ -62,6 +62,16 @@
         border-radius: 18px;
     }
 
+    .containerfooter {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 4rem;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
     div.balaodeconversa {
         display: none;
     }
