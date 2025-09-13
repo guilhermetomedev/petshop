@@ -50,7 +50,7 @@ header {
 }
 
 header > h1 > a{
-    font-weight: var(--peso-lighter);
+    font-weight: var(--peso-regular);
     color: var(--azul-escuro);
 }
 
@@ -86,7 +86,7 @@ div#menuhamburguer:hover {
     }
 
     nav#menu ul {
-        background-color: var(--azul-claro);
+        background-color: #acd5def5;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
@@ -150,8 +150,10 @@ main {
 
 section {
     background-color: var(--azul-claro);
-    height: 800px;
+    height: 750px;
+    width: 100%;
 }
+
 section.home {
     
 }
@@ -159,6 +161,7 @@ section.home {
 div.containerhome {
     width: 400px;
     margin-left: 32px;
+    
 }
 
 div.containerhome > p, h2{
@@ -179,6 +182,9 @@ div.containerhome > p{
     margin-bottom: 16px;
     font-size: 1.5em;
 }
+
+
+/*====================================*/
 
 section.servico {
     background-color: white;
@@ -201,7 +207,7 @@ footer {
 
 .logo a, .containerfooter li, .containerfooter a, p, hr{
     color: var(--azul-escuro);
-    font-weight: lighter;
+    font-weight: normal;
     text-decoration: none;
 }
 
