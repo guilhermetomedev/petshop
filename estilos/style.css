@@ -144,13 +144,15 @@ div.balaodeconversa > a > i{
 
 /* ENCERRA */
 
+/*====================================*/
+
 main {
     background-color: black;
 }
 
 section {
     background-color: var(--azul-claro);
-    height: 750px;
+    height: 1000px;
     width: 100%;
 }
 
@@ -161,7 +163,6 @@ section.home {
 div.containerhome {
     width: 400px;
     margin-left: 32px;
-    
 }
 
 div.containerhome > p, h2{
@@ -183,12 +184,206 @@ div.containerhome > p{
     font-size: 1.5em;
 }
 
-
 /*====================================*/
 
 section.servico {
     background-color: white;
+    height: 1200px;
 }
+
+div.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: 100%;
+}
+
+.containertitle > h2{
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+
+.produtosoferecidos ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #1A4E8D;
+    padding: 2rem;
+}
+
+.produtosoferecidos i{
+    font-size: 2.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.produtosoferecidos li {
+    font-size: 1.1em;
+}
+
+div.bnt > a {
+    display: block;
+    background-color: var(--azul-escuro);
+    color: white;
+    border-radius: 2rem;
+    padding: 1.1rem 2.5rem;
+}
+
+div.bnt > a:hover {
+    opacity: 80%;
+    outline: 1px solid var(--azul-escuro);
+    outline-offset: 3px; 
+    transition: outline 0.4s ease;
+}
+
+.conjuntoimgs {
+    background-color: #acd5de4b;
+    padding: 32px ;
+    margin-top: 16px;
+    border-radius: 1rem;
+}
+
+.conjuntoimgs a{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.conjuntoimgs > a > img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    flex: 1 0 250px;
+    border-radius: 1rem;
+}
+
+.conjuntoimgs > a > img:hover, img:active{
+    transform: scale(1.080);
+}
+
+/*====================================*/
+
+section#nossotrabalho {
+    background-color: var(--azul-escuro);
+    height: 1100px;
+}
+
+div.nossotrabalho {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.containertitle2 > h2{
+    color: var(--cor-principal);
+    font-weight: 700;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+div.bnt2 > a {
+    display: block;
+    background-color: var(--cor-principal);
+    color: var(--azul-escuro);
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 1.1rem 2.5rem;
+}
+
+div.bnt2 > a:hover {
+    opacity: 80%;
+    outline: 1px solid var(--azul-escuro);
+    outline-offset: 3px; 
+    transition: outline 0.4s ease;
+}
+
+.conjuntoimgs2 a{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.conjuntoimgs2 > a > img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    flex: 1 0 250px;
+    border-radius: 1rem;
+}
+
+.conjuntoimgs2 > a > img:hover, img:active{
+    transform: scale(1.080);
+}
+
+section#sobre {
+    padding: 2rem;
+    height: 1150px;
+}
+
+div.sobre {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.sobre img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: flex-start;
+    
+}
+
+div.cardsreview {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: var(--cor-principal);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 350px;
+    flex: 1 0 350px;
+}
+
+div.cardsreview > p, h3{
+    color: var(--azul-escuro);
+    text-align: justify;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.1em;
+}
+
+div.cardsreview > h3{
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+
+/*====================================*/
 
 footer {
     width: 100%;
@@ -236,10 +431,7 @@ div.contentextra {
     margin: auto;
 }
 
-
-
-
-
+/*====================================*/
 
 
 

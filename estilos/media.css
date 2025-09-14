@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 963px){
+@media screen and (min-width: 968px) {
+
     div#menuhamburguer {
         display: none;
     }
@@ -72,8 +73,61 @@
         align-self: flex-start;
     }
 
+    .produtosoferecidos ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtosoferecidos i{
+        font-size: 2.5rem;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    div.sobre {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        gap: 2rem;
+    }
+
+    div.containertitle3 {
+        display: flex;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    div.cardsreview {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 350px;
+        padding: 1rem;
+        flex: 0 0 350px;
+    }
+
     div.balaodeconversa {
         display: none;
     }
+}
+
+@media screen and (max-width: 968px){
+
+    header {
+        background-color: var(--cor-principal);
+    }
+
+    section.servico {
+    height: 1600px;
+    }
+
+    
 
 }
