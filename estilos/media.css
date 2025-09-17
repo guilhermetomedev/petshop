@@ -20,7 +20,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 1rem;
         height: 5vh;
         background-color: rgba(240, 248, 255, 0);
@@ -36,7 +36,7 @@
         color: var(--azul-escuro);
         font-weight: var(--peso-lighter);
         font-size: 1rem;
-        padding: 12px 48px;
+        padding: 6px 48px;
         width: 0%;
         text-align: center;
     }
@@ -63,6 +63,26 @@
         border-radius: 18px;
     }
 
+    section#home {
+        background: var(--azul-claro) url(../img/dog&cat.avif) no-repeat right bottom / 60% scroll;
+        height: 700px;
+    }
+
+    div.containerhome {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        transform: translate(5%, -10%);
+    }
+
+    div.containerhome h2 {
+       
+    }
+
+    div.containerhome p {
+        
+    }
+
     .containerfooter {
         display: flex;
         flex-flow: row wrap;
@@ -87,6 +107,25 @@
         text-align: center;
     }
 
+    section#nossotrabalho {
+        height: 1000px;
+    }
+
+    div.conjuntoimgs2 > a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section#sobre {
+        height: 1100px;
+    }
+
+    section#servico {
+        background-color: white;
+        height: 1500px;
+}
+
     div.sobre {
         display: flex;
         flex-flow: row wrap;
@@ -97,10 +136,8 @@
         gap: 2rem;
     }
 
-    div.containertitle3 {
-        display: flex;
-        align-self: flex-start;
-        text-align: center;
+    div.containertitle3 > h2{
+        align-self: flex-end;
     }
 
     div.cardsreview {
@@ -111,6 +148,18 @@
         height: 350px;
         padding: 1rem;
         flex: 0 0 350px;
+    }
+
+    div#cardprimeiro {
+        transform: translate(0, -100px);
+    }
+
+    div#cardmeio {
+        transform: translate(0, 100px);
+    }
+
+    div#cardterceiro {
+        transform: translate(50, -50px);
     }
 
     div.balaodeconversa {
