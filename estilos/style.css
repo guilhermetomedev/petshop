@@ -284,7 +284,7 @@ div.bnt > a:hover {
 
 section#sobre {
     padding: 2rem;
-    height: 1430px;
+    height: 1600px;
 }
 
 div.sobre {
@@ -321,6 +321,7 @@ div.cardsreview {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--cor-principal);
     padding: 2rem;
     border-radius: 1rem;
