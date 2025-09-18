@@ -63,24 +63,27 @@
         border-radius: 18px;
     }
 
-    section#home {
-        background: var(--azul-claro) url(../img/dog&cat.avif) no-repeat right bottom / 60% scroll;
-        height: 700px;
-    }
-
     div.containerhome {
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column-reverse;
-        transform: translate(5%, -10%);
+        display: flex;
+        flex-direction: column;
+        align-items: ;
+        padding: 5rem 0 0 0.9rem;
+        height: 100%;
     }
 
     div.containerhome h2 {
-       
+        display: flex;
+        color: var(--azul-escuro);
+        font-weight: 700;
+        font-size: 4.5em;
+        text-align: left;
     }
 
-    div.containerhome p {
-        
+    div.contentimg {
+        position: relative;
+        bottom: 20%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .containerfooter {
