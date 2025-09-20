@@ -74,7 +74,7 @@
         display: flex;
         color: var(--azul-escuro);
         font-weight: 700;
-        font-size: 4.5em;
+        font-size: 5em;
         text-align: left;
     }
 
@@ -178,6 +178,8 @@
     section.servico {
         height: 1600px;
     }
+
+    
 }
 
 @media screen and (min-width: 720px) {
