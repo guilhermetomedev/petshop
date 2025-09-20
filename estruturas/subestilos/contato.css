@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+:root {
+    /*CORES: */
+    --azul-escuro: #1A4E8D;
+    --azul-claro: #ACD5DE;
+    --cor-principal: #FFFFFF;
+}
+
+* {
+    label {
+        padding-top: 1.5rem;
+        color: var(--azul-escuro);
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 1000px #222 inset !important;
+      box-shadow: 0 0 0 1000px var(--azul-claro) inset !important;
+      -webkit-text-fill-color: var(--azul-escuro) !important;
+      caret-color: red; /* opcional */
+      transition: background-color 9999s ease-in-out 0s !important;
+    }
+}
+
+section.contato {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+div.contentcontact {
+    margin: 0 auto 10% ;
+    width: 80%;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+div.contentcontact > h1{
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+    text-align: left;
+    font-weight: 100;
+}
+
+div.contentcontact > h2{
+    font-size: 2.5rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+div.forms > form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 1rem;
+}
+
+input::placeholder {
+    color: var(--azul-escuro);
+    opacity: 1;
+}
+
+div.forms > form input{
+    background-color: var(--azul-claro);
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80vw;
+    padding: 5px;
+    font-size: 1.2em;
+    color: var(--azul-escuro);
+}
+
+div.forms > form > div{
+    width: 100%;
+}
+
+div.forms > form input:focus{
+    outline: none;
+}
+
+div.forms > form textarea{
+    background-color: var(--azul-claro);
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80vw;
+    height: 20vh;
+    padding: 5px;
+    font-size: 1.2em;
+    color: var(--azul-escuro);
+    resize: none;
+}
+
+div.forms > form textarea:focus {
+    outline: none;
+}
+
+div.forms > form input[type="submit"]{
+    display: block;
+    margin: 5% auto 10%;
+    background-color: var(--azul-escuro);
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 1rem;
+    max-width: 80vw;
+    height: 5vh;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 968px) {
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    div.contentcontact {
+        width: 50%;
+        float: left;
+    }
+
+    div.contentcontact > h2{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    div.forms > form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    div.forms > form input, div.forms > form textarea{
+        width: 40vw;
+    }
+
+    div#submit {
+        width: 30%;
+    }
+
+    div#submit input[type="submit"] {
+        width: 60%;
+        height: 4vh;
+    }
+}

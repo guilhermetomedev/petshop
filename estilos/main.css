@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--fonte-principal);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--azul-escuro);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap");
+
+:root {
+  /* CORES */
+  --azul-escuro: #1a4e8d;
+  --azul-claro: #acd5de;
+  --cor-principal: #ffffff;
+
+  /* FONTES */
+  --fonte-principal: "Open Sans", Arial, sans-serif;
+
+  /*PESOS*/
+  --peso-lighter: 100;
+  --peso-regular: 400;
+  --peso-bold: 700;
+}
+
+body,
+html {
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 1em;
+  font-family: var(--fonte-principal);
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  background-color: var(--azul-claro);
+  z-index: 4000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  width: 100vw;
+  padding: 2rem;
+}
+
+header > h1 > a {
+  font-weight: var(--peso-regular);
+  color: var(--azul-escuro);
+}
+
+header > h1 a > i {
+  margin-right: 10px;
+}
+
+div#menuhamburguer {
+  font-size: 2rem;
+  padding: 5px;
+  z-index: 1001;
+}
+
+div#menuhamburguer > a {
+  color: black;
+  font-weight: 100;
+}
+
+div#menuhamburguer:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  border-radius: 30%;
+}
+
+/* TODA A CONFIGURAÇÃO DO NAV */
+
+nav#menu {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+nav#menu ul {
+  background-color: #acd5def5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+#login {
+  order: -1;
+  margin: 0px 0 40px;
+}
+
+#login i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+nav#menu a {
+  display: inline-block;
+  color: var(--azul-escuro);
+  padding: 2rem;
+  font-weight: var(--peso-lighter);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+nav#menu a:hover,
+nav#menu a:active {
+  color: var(--cor-principal);
+  background-color: var(--azul-escuro);
+  transition: background-color 0.5s ease;
+}
+
+/* ENCERRA */
+
+/* CONFIGURAÇÃO DO BOTÃO DE CONVERSA*/
+
+div.balaodeconversa {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+  border-radius: 100%;
+  padding: 0.8rem;
+  z-index: 1000;
+  margin: 0px 0px 4rem 2rem;
+}
+
+div.balaodeconversa > a > i {
+  font-size: 2rem;
+  color: var(--azul-escuro);
+}
+
+/* ENCERRA */
+
+/*====================================*/
+
+main {
+  background-color: black;
+}
+
+section {
+  background-color: var(--azul-claro);
+  height: 100%;
+  width: 100%;
+}
+
+section#home {
+  height: 700px;
+}
+
+div.containerhome {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0 0 0.9rem;
+  height: 100%;
+}
+
+div.containerhome h2 {
+  display: flex;
+  color: var(--azul-escuro);
+  font-weight: 700;
+  font-size: 3em;
+  text-align: left;
+}
+
+div.containerhome p {
+  align-self: flex-start;
+  color: var(--azul-escuro);
+  font-weight: normal;
+  font-size: 1.4em;
+  text-align: left;
+}
+
+div.contentimg {
+  position: relative;
+  bottom: -27%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.contentimg > img {
+  max-width: 100%;
+}
+
+/*====================================*/
+
+section#servico {
+  background-color: white;
+  height: 1830px;
+}
+
+div.servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  height: 100%;
+}
+
+.containertitle > h2 {
+  color: var(--azul-escuro);
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+}
+
+.produtosoferecidos ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #1a4e8d;
+  padding: 2rem;
+}
+
+.produtosoferecidos i {
+  font-size: 2.5rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.produtosoferecidos li {
+  font-size: 1.1em;
+}
+
+div.bnt > a {
+  display: block;
+  background-color: var(--azul-escuro);
+  color: white;
+  border-radius: 2rem;
+  padding: 1.1rem 2.5rem;
+}
+
+div.bnt > a:hover {
+  opacity: 0.8;
+  outline: 1px solid var(--azul-escuro);
+  outline-offset: 5px;
+  transition: outline 0.4s ease;
+}
+
+.conjuntoimgs {
+  background-color: #acd5de1c;
+  padding: 32px;
+  margin-top: 16px;
+  border-radius: 0.5rem;
+}
+
+.conjuntoimgs a {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.conjuntoimgs > a > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  flex: 1 0 250px;
+  border-radius: 1rem;
+}
+
+.conjuntoimgs > a > img:hover,
+img:active {
+  transform: scale(1.08);
+}
+
+/*====================================*/
+
+section#sobre {
+  padding: 2rem;
+  height: 100%;
+}
+
+div.sobre {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.sobre img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+div.containertitle3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+div.containertitle3 > h2 {
+  color: var(--azul-escuro);
+  font-weight: 700;
+  font-size: 3em;
+  text-align: left;
+}
+
+div.cardsreview {
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-principal);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 350px;
+  flex: 1 0 350px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+
+div.cardsreview > p,
+h3 {
+  color: var(--azul-escuro);
+  text-align: justify;
+  align-self: flex-start;
+  text-indent: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.1em;
+}
+
+div.cardsreview > h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+/*====================================*/
+
+section#nossotrabalho {
+  background-color: var(--azul-escuro);
+  min-height: 100%;
+}
+
+div.nossotrabalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  gap: 1rem;
+  height: 100%;
+}
+
+.containertitle2 > h2 {
+  color: var(--cor-principal);
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+}
+
+div.bnt2 > a {
+  display: block;
+  background-color: var(--cor-principal);
+  color: var(--azul-escuro);
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1.1rem 2.5rem;
+}
+
+div.bnt2 > a:hover {
+  opacity: 80%;
+  outline: 1px solid var(--azul-escuro);
+  outline-offset: 3px;
+  transition: outline 0.4s ease;
+}
+
+div.conjuntoimgs2 > a {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+div.conjuntoimgs2 > a > img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  flex: 1 0 350px;
+  border-radius: 5px;
+}
+
+.conjuntoimgs2 > a > img:hover,
+.conjuntoimgs2 > a > img:active {
+  transform: scale(1.01);
+  border: 1px solid var(--azul-claro);
+  transition: transform 0.3s ease;
+}
+
+/*====================================*/
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--cor-principal);
+}
+.containerfooter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--cor-principal);
+}
+
+.logo a,
+.containerfooter li,
+.containerfooter a,
+p,
+hr {
+  color: var(--azul-escuro);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.containerfooter li {
+  line-height: 1.8rem;
+}
+
+.containerfooter h3 {
+  color: #1a4e8d;
+  margin: 0px 0px 1rem -1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+div.contentextra > p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.logo i {
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+
+div.contentextra {
+  width: 95%;
+  margin: auto;
+}
+
+/*====================================*/

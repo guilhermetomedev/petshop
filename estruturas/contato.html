@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <title>Página de Log in</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/main.css" />
+    <link rel="stylesheet" href="../estilos/media.css" />
+    <link rel="stylesheet" href="subestilos/contato.css" />
+    <link rel="shortcut icon" href="../icones/favicon-16x16.png" type="image/x-icon">
+    <title>Página de serviços</title>
+    <script
+      src="https://kit.fontawesome.com/fd249ef772.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <h1>
+        <a href="#"><i class="fa-solid fa-cat"></i>Villa Pet</a>
+      </h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html" rel="prev">Home</a></li>
+          <li><a href="estruturas/servico.html" rel="prev">Serviços</a></li>
+          <li><a href="../estruturas/sobre.html" rel="prev">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li id="login">
+            <a href="#"><i class="fa-solid fa-circle-user"></i>Login</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="menuhamburguer">
+        <a href="javascript:void(0)"
+          ><i class="fa-solid fa-bars" id="burguer" onclick="clickNav()"></i
+        ></a>
+      </div>
+      <div class="balaodeconversa">
+        <a href="#"><i class="fa-solid fa-comment-dots"></i></a>
+      </div>
+    </header>
+    <main>
+      <section class="contato">
+        <article>
+          <div class="contentcontact">
+            <h1>Get in touch</h1>
+            <h2>
+              Call us, contact our team via the form below, or book your pet's
+              appointment directly on the website.
+            </h2>
+          </div>
+          <div class="forms">
+            <form action="../cores/paletadecores.txt" method="post" autocomplete="on">
+              <label for="name">First Name *</label>
+              <div>
+                <input type="text" name="name" id="name" required />
+              </div>
+
+              <label for="Lastname">Last Name *</label>
+              <div>
+                <input type="text" name="Lastname" id="Lastname" required />
+              </div>
+
+              <label for="email">Email *</label>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  min-leight="20"
+                  max-leight="60"
+                  placeholder=seuemail@gmail.com"
+                />
+              </div>
+
+              <label for="address">Endereço</label>
+              <div>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  required
+                  min-leight="20"
+                  max-leight="60"
+                  placeholder="Rua Exemplo, 123"
+                />
+              </div>
+              <label for="mensagem" class="campo-mensagem">Escreva Uma Mensagem</label>
+              <div class="campo-mensagem">
+                <textarea name="mensagem" id="mensagem" wrap="hard" maxlength="400"></textarea>
+              </div>
+              <div id="submit">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="containerfooter" id="contato">
+        <div class="logo">
+          <h1>
+            <a href="#home"><i class="fa-solid fa-cat"></i>Villa Pet</a>
+          </h1>
+        </div>
+
+        <ul class="endereco">
+          <h3>address</h3>
+          <li>500 Terry Francine Street,</li>
+          <li>500 Terry Francine Street, San Francisco, CA 94158</li>
+        </ul>
+        <ul class="contato">
+          <h3>contato</h3>
+          <li>info@mysite.com</li>
+          <li>123-456-7890</li>
+        </ul>
+        <ul class="sociais">
+          <h3>socias</h3>
+          <li><a href="">Git Hub</a></li>
+          <li><a href="">Linkedin</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+        <div class="contentextra">
+          <hr />
+          <p>© 2025 feito por Guilherme Tomé. Midias ofecidas pela Wix</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
+      function clickNav() {
+        if (menu.style.display == "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

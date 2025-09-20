@@ -66,8 +66,7 @@
     div.containerhome {
         display: flex;
         flex-direction: column;
-        align-items: ;
-        padding: 5rem 0 0 0.9rem;
+        padding: 5rem 0 0 10%;
         height: 100%;
     }
 
@@ -81,7 +80,7 @@
 
     div.contentimg {
         position: relative;
-        bottom: 20%;
+        bottom: 30%;
         display: flex;
         justify-content: flex-end;
     }
@@ -127,7 +126,7 @@
     section#servico {
         background-color: white;
         height: 1500px;
-}
+    }
 
     div.sobre {
         display: flex;
@@ -177,9 +176,21 @@
     }
 
     section.servico {
-    height: 1600px;
+        height: 1600px;
     }
+}
 
+@media screen and (min-width: 720px) {
+
+    div.contentimg {
+        bottom: -5%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    div.contentimg {
+        bottom: 15%;
+    }
     
-
 }
