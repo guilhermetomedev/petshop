@@ -99,4 +99,12 @@ div.cardsservices > a:hover {
     align-self: flex-start;
     padding: 12px 5%;
   }
+
+  div.cardsservices > a:hover {
+    opacity: 0.8;
+    width: 18.8%;
+    height: 20%;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
 }
