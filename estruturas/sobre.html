@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../icones/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/media.css">
+    <link rel="stylesheet" href="../estruturas/subestilos/sobre.css">
     <title>Villa Pet</title>
+    <script
+      src="https://kit.fontawesome.com/fd249ef772.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
-<body>
+<body onresize="mudouTamanho()">
+    <header>
+      <h1>
+        <a href="#"><i class="fa-solid fa-cat"></i>Villa Pet</a>
+      </h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="estruturas/servico.html" rel="next">Serviços</a></li>
+          <li><a href="estruturas/sobre.html" rel="next">Sobre</a></li>
+          <li><a href="estruturas/contato.html" rel="next">Contato</a></li>
+          <li id="login">
+            <a href="estruturas/contato.html" rel="next"
+              ><i class="fa-solid fa-circle-user"></i>Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="menuhamburguer">
+        <a href="javascript:void(0)"
+          ><i class="fa-solid fa-bars" id="burguer" onclick="clickNav()"></i
+        ></a>
+      </div>
+      <div class="balaodeconversa">
+        <a href="estruturas/localparalinks.html" target="_self" rel="next""><i class="fa-solid fa-comment-dots"></i></a>
+      </div>
+      <div class="letschat">
+        <a href="estruturas/localparalinks.html" target="_self" rel="next">Let's Chat!</a>
+      </div>
+    </header>
+    <main>
+        <section id="nos">
+            <div>
+                <h3>Conheça a Equipe Villa!</h3>
+            </div>
+            <div class="funcionarios">
+                <img src="../img/mulher.avif" alt="mulher sorrindo">
+                <h4>Roberta Soares</h4>
+                <p>Estoquista</p>
+            </div>
+            <div class="funcionarios">
+                <img src="../img/homem.avif" alt="homem sorrindo">
+                <h4>Astolfo Miguel</h4>
+                <p>Consultor de Vendas</p>
+            </div>
+            <div class="funcionarios">
+                <img src="../img/mulher2.avif" alt="mulher sorrindo">
+                <h4>Mariana Carvalho</h4>
+                <p>Veterinária</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="containerfooter" id="contato">
+        <div class="logo">
+          <h1>
+            <a href="#home"><i class="fa-solid fa-cat"></i>Villa Pet</a>
+          </h1>
+        </div>
+
+        <ul class="endereco">
+          <h3>address</h3>
+          <li>500 Terry Francine Street,</li>
+          <li>500 Terry Francine Street, San Francisco, CA 94158</li>
+        </ul>
+        <ul class="contato">
+          <h3>contato</h3>
+          <li>info@mysite.com</li>
+          <li>123-456-7890</li>
+        </ul>
+        <ul class="sociais">
+          <h3>socias</h3>
+          <li><a href="https://github.com/guilhermetomedev?tab=repositories" target="_blank" rel="external">Git Hub</a></li>
+          <li><a href="#" target="_blank" rel="external">Linkedin</a></li>
+          <li><a href="#" target="_blank" rel="external">Instagram</a></li>
+        </ul>
+        <div class="contentextra">
+          <hr />
+          <p>© 2025 feito por Guilherme Tomé. Midias ofecidas pela Wix</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
+      function clickNav() {
+        if (menu.style.display == "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
 </body>
 </html>

@@ -143,7 +143,7 @@ div.balaodeconversa {
   background-color: white;
   border: 1px solid black;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0.8rem;
   z-index: 1000;
   margin: 0px 0px 4rem 2rem;
@@ -152,6 +152,10 @@ div.balaodeconversa {
 div.balaodeconversa > a > i {
   font-size: 2rem;
   color: var(--azul-escuro);
+}
+
+div.letschat {
+  display: none;
 }
 
 /* ENCERRA */

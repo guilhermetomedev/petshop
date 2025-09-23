@@ -1,0 +1,52 @@
+:root {
+    /*CORES:*/
+        --azul-escuro: #1A4E8D;
+        --azul-claro: #ACD5DE;
+        --cor-principal: #FFFFFF;
+}
+
+section#nos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    background-color: var(--azul-escuro);
+    width: 100vw;
+    height: 100%;
+    padding: 5% 0 5%;
+}
+
+#nos h3, #nos p {
+    color: white;
+}
+#nos h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+#nos h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+#nos p {
+    font-size: 1em;
+    font-weight: normal
+}
+
+div.funcionarios {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+div.funcionarios img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
